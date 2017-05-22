@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>Juego Filarmónico</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="title" content="Juego Filarmónico">
+        <meta name="description" content="Crea tu melodía única con el juego filarmónico de los minuetos de la Biblioteca Nacional de España. ¡Tira los dados y crea tu minueto!">
+        <meta name="keywords" content="juego filarmonico, juego musical, musica clasica">
+        {{@robots}}
+        <link href="http://juegofilarmonico.bne.es/" rel="canonical" />
+
+        <!-- Twitter meta tags -->
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:image' content="http://juegofilarmonico.bne.es/assets/images/ejemplo-player.png" />
+        <meta name='twitter:site' content='' />
+        <meta name='twitter:url' content='http://juegofilarmonico.bne.es/'/>
+        <meta name='twitter:description' content="Crea tu melodía única con el juego filarmónico de los minuetos de la Biblioteca Nacional de España. ¡Tira los dados y crea tu minueto!" />
+        <meta name='twitter:title' content='Juego Filarmónico' />
+
+        <!-- Facebook meta tags -->
+        <meta property="og:url" content="http://juegofilarmonico.bne.es/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Juego Filarmónico" />
+        <meta property="og:description" content="Crea tu melodía única con el juego filarmónico de los minuetos de la Biblioteca Nacional de España. ¡Tira los dados y crea tu minueto!" />
+        <meta property="og:image" content="http://juegofilarmonico.bne.es/assets/images/ejemplo-player.png" />
+
+        <!-- CSS & stylesheets -->
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./assets/css/estilos.css" media="all" rel="stylesheet" />
+        <link href="./assets/css/responsive.css" media="all" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <!-- Favicons -->
+        <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+
+        {{@minuetData}}
+
+
+        <!-- MIDI Library -->
+        <script type="text/javascript">
+
+        var iOS = ['iPad', 'iPhone', 'iPod'].indexOf(navigator.platform) >= 0;
+
+        window.onload = function () {
+
+            MIDI.loadPlugin({
+                soundfontUrl: "/assets/soundfont/",
+                instrument:"acoustic_grand_piano",
+                onprogress: function(state, progress) {
+
+                },
+                onsuccess: function() {
+
+                    var iOS = ['iPad', 'iPhone', 'iPod'].indexOf(navigator.platform) >= 0;
+                    var minuetos=new Minuetos(MIDI);
+
+                }
+            });
+        };
+
+        </script>
+        <!-- End MIDI Library -->
+
+        <!-- Google Analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-XXXXX-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <div class="container-fluid container-menu tabbed">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">
+                        <img src="/assets/images/logoBNE.png" alt="Logo de la Biblioteca Nacional de España" title="Logo de la Biblioteca Nacional de España">
+                    </a>
+                    <a href="/" class="navbar-brand">
+                        <h1>Juego Filarmónico</h1>
+                    </a>
+                </div>
+                <ul class="navbar-nav navbar-right tabs">
+                    <li class="active" id="menuJuego"><a href="/">Juego</a></li>
+                    <li id="menuHistoria"><a href="/historia">Historia</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- end Navigation bar -->
+
+        <!-- Main content -->
+        <div class="main-content">
+
+            <!-- Game Tab Content -->
+            <div class="theme-showcase fade in active game-container" role="tabpanel" id="juegoTab">
+
+                <!-- Header Jumbotron -->
+                <div class="jumbotron header {{@hiddenWhenShared}}">
+                    <div class="container">
+                        <div class="header-text">
+                            <div class="row">
+                                <div class="col-md-8 header-intro">
+                                    <h2>La historia del Juego Filarmónico</h2>
+                                    <p>El Juego Filarmónico fue concebido como un entretenimiento destinado a las reuniones sociales, pero también como un estudio teórico de composición musical. Mediante un sencillo juego de dados, cualquier persona sin conocimientos musicales podía componer infinidad de pequeñas piezas en forma de minué, el baile de salón más popular de la época.</p>
+                                    <p><a href="/historia" onclick="$('body').scrollTo(0)"><span><strong>Lee la historia y descarga el documento original</strong></span><span class="glyphicon glyphicon-triangle-right"> </span></a></p>
+                                </div>
+
+                                <div class="col-md-4 header-image">
+                                    <img src="/assets/images/dancing-dark.jpg" alt="Imagen de baile de salón del siglo XVIII" title="Escena de baile de salón del siglo XVIII" width="300">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Header Jumbotron -->
+
+                <!-- Introduction Jumbotron -->
+                <div class="jumbotron introduction {{@hiddenWhenShared}}">
+                    <div class="container presentation">
+                        <div class="row">
+                            <div class="col-md-7 col-xs-12">
+                                <div class="presentation-text">
+                                    <h2>Instrucciones para crear un minueto</h2>
+                                    <p>Crea una melodía única usando este juego del siglo XVIII. Su autor distribuyó en 32 columas más de 200 compases. Con cada tirada de dados se elige uno de esos compases aleatoriamente creando una nueva combinación.</p>
+                                    <p>Cada número de la tabla equivale a unas notas musicales que, usando los dados, se eligen aleatoriamente para formar la melodía final.</p>
+                                    <p><strong>Hay más de 120.000 cuatrillones de posibles melodías.</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-xs-12">
+                                <div class="presentation-steps">
+                                    <ul>
+                                        <li><span class="presentation-steps-number pull-left">1</span><span>Tira los dados</span></li>
+                                        <li><span class="presentation-steps-number pull-left">2</span><span>Escucha el minueto único que acabas de crear</span></li>
+                                        <li><span class="presentation-steps-number pull-left">3</span><span>Ponle nombre a tu minueto y compártelo</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Introduction Jumbotron -->
+
+                <!-- Game Content -->
+                <div class="container game-content">
+
+                    <div class="game-step {{@hiddenWhenShared}}">
+                        <span class="presentation-steps-number">1</span>
+                        <span class="game-step-text"><h3>Tira los dados para crear un minueto único</h3></span>
+                          <input type="button" id="btnStartIOs" value="Comenzar" class="oculto"></input>
+                        <ul>
+                            <li>
+                                <div class="game-creation oculto">
+                                    <img src="/assets/images/dados-par.png" alt="Par de dados" title="Par de dados">
+                                    <!--<button type="button" class="btn oculto" id="btnStartIOs">Comenzar</button>-->
+                                    <button type="button" class="btn" id="btnCreate"> Tirar los dados</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="game-counter oculto">
+                                    <img src="/assets/images/dados-par.png" alt="Par de dados" title="Par de dados">
+                                    <span id="btnCounter"> Has tirado los dados <strong><span class="ntiradas" id="ntiradas"></span></strong> veces</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="titulo_compartido {{@visibleWhenShared}}">
+                        <h3></h3>
+                        <p>Este minueto ha sido creado con el Juego Filarmónico de la BNE. <strong><a href="/">Crear un nuevo minueto<span class="glyphicon glyphicon-triangle-right"></span></a></strong></p>
+                    </div>
+
+                    <div class="tablero1 visible-xs {{@hiddenWhenShared}}" id="tablaMinuetos">
+
+                        <div class="titulo">Parte 1</div>
+                        <div class="interior">
+
+                            <div class="fila">
+
+                                <div class="tminu mdados"><span class="dado2"></span></div>
+                                <div class="tminu mdados "><span class="dado3"></span></div>
+                                <div class="tminu mdados "><span class="dado4"></span></div>
+                                <div class="tminu mdados "><span class="dado5"></span></div>
+                                <div class="tminu mdados "><span class="dado6"></span></div>
+                                <div class="tminu mdados "><span class="dado7"></span></div>
+                                <div class="tminu mdados "><span class="dado8"></span></div>
+                                <div class="tminu mdados "><span class="dado9"></span></div>
+                                <div class="tminu mdados "><span class="dado10"></span></div>
+                                <div class="tminu mdados "><span class="dado11"></span></div>
+                                <div class="tminu mdados "><span class="dado12"></span></div>
+
+                            </div>
+
+                          <div class="fila">
+
+                            <span class="tminu cminu000">96</span>
+                            <span class="tminu cminu001">32</span>
+                            <span class="tminu cminu002">69</span>
+                            <span class="tminu cminu003">40</span>
+                            <span class="tminu cminu004">148</span>
+                            <span class="tminu cminu005">104</span>
+                            <span class="tminu cminu006">152</span>
+                            <span class="tminu cminu007">119</span>
+                            <span class="tminu cminu008">98</span>
+                            <span class="tminu cminu009">3</span>
+                            <span class="tminu cminu0010">54</span>
+                          </div>
+
+                          <div class="fila">
+
+                            <span class="tminu cminu010">22</span>
+                            <span class="tminu cminu011">6</span>
+                            <span class="tminu cminu012">95</span>
+                            <span class="tminu cminu013">17</span>
+                            <span class="tminu cminu014">74</span>
+                            <span class="tminu cminu015">157</span>
+                            <span class="tminu cminu016">60</span>
+                            <span class="tminu cminu017">84</span>
+                            <span class="tminu cminu018">142</span>
+                            <span class="tminu cminu019">87</span>
+                            <span class="tminu cminu0110">130</span>
+                          </div>
+
+
+                          <div class="fila">
+                            <span class="tminu cminu020">141</span>
+                            <span class="tminu cminu021">128</span>
+                            <span class="tminu cminu022">158</span>
+                            <span class="tminu cminu023">113</span>
+                            <span class="tminu cminu024">163</span>
+                            <span class="tminu cminu025">27</span>
+                            <span class="tminu cminu026">171</span>
+                            <span class="tminu cminu027">114</span>
+                            <span class="tminu cminu028">42</span>
+                            <span class="tminu cminu029">165</span>
+                            <span class="tminu cminu0110">130</span>
+                          </div>
+
+                          <div class="fila">
+                              <span class="tminu cminu030">41</span>
+                              <span class="tminu cminu031">63</span>
+                              <span class="tminu cminu032">13</span>
+                              <span class="tminu cminu033">85</span>
+                              <span class="tminu cminu034">45</span>
+                              <span class="tminu cminu035">167</span>
+                              <span class="tminu cminu036">53</span>
+                              <span class="tminu cminu037">50</span>
+                              <span class="tminu cminu038">156</span>
+                              <span class="tminu cminu039">61</span>
+                              <span class="tminu cminu0310">103</span>
+                          </div>
+
+                          <div class="fila">
+                              <span class="tminu cminu040">105</span>
+                              <span class="tminu cminu041">146</span>
+                              <span class="tminu cminu042">153</span>
+                              <span class="tminu cminu043">161</span>
+                              <span class="tminu cminu044">80</span>
+                              <span class="tminu cminu045">154</span>
+                              <span class="tminu cminu046">99</span>
+                              <span class="tminu cminu047">140</span>
+                              <span class="tminu cminu048">75</span>
+                              <span class="tminu cminu049">135</span>
+                              <span class="tminu cminu0410">28</span>
+
+                          </div>
+
+
+                            <div class="fila">
+                                <span class="tminu cminu050">122</span>
+                                <span class="tminu cminu051">46</span>
+                                <span class="tminu cminu052">55</span>
+                                <span class="tminu cminu053">2</span>
+                                <span class="tminu cminu054">97</span>
+                                <span class="tminu cminu055">68</span>
+                                <span class="tminu cminu056">133</span>
+                                <span class="tminu cminu057">86</span>
+                                <span class="tminu cminu058">129</span>
+                                <span class="tminu cminu059">47</span>
+                                <span class="tminu cminu0510">37</span>
+                            </div>
+
+                            <div class="fila">
+                              <span class="tminu cminu060">11</span>
+                              <span class="tminu cminu061">134</span>
+                              <span class="tminu cminu062">110</span>
+                              <span class="tminu cminu063">159</span>
+                              <span class="tminu cminu064">36</span>
+                              <span class="tminu cminu065">118</span>
+                              <span class="tminu cminu066">21</span>
+                              <span class="tminu cminu067">169</span>
+                              <span class="tminu cminu068">62</span>
+                              <span class="tminu cminu069">147</span>
+                              <span class="tminu cminu0610">106</span>
+                            </div>
+
+                            <div class="fila">
+                                <span class="tminu cminu070">30</span>
+                                <span class="tminu cminu071">81</span>
+                                <span class="tminu cminu072">24</span>
+                                <span class="tminu cminu073">100</span>
+                                <span class="tminu cminu074">107</span>
+                                <span class="tminu cminu075">91</span>
+                                <span class="tminu cminu076">127</span>
+                                <span class="tminu cminu077">94</span>
+                                <span class="tminu cminu078">123</span>
+                                <span class="tminu cminu079">33</span>
+                                <span class="tminu cminu0710">5</span>
+                            </div>
+
+                            <div class="fila">
+                                <span class="tminu cminu080">70</span>
+                                <span class="tminu cminu081">117</span>
+                                <span class="tminu cminu082">66</span>
+                                <span class="tminu cminu083">90</span>
+                                <span class="tminu cminu084">25</span>
+                                <span class="tminu cminu085">138</span>
+                                <span class="tminu cminu086">16</span>
+                                <span class="tminu cminu087">120</span>
+                                <span class="tminu cminu088">65</span>
+                                <span class="tminu cminu089">102</span>
+                                <span class="tminu cminu0810">35</span>
+                            </div>
+                            <div class="fila">
+                                <span class="tminu cminu090">121</span>
+                                <span class="tminu cminu091">39</span>
+                                <span class="tminu cminu092">139</span>
+                                <span class="tminu cminu093">176</span>
+                                <span class="tminu cminu094">143</span>
+                                <span class="tminu cminu095">71</span>
+                                <span class="tminu cminu096">155</span>
+                                <span class="tminu cminu097">88</span>
+                                <span class="tminu cminu098">77</span>
+                                <span class="tminu cminu099">4</span>
+                                <span class="tminu cminu0910">20</span>
+                            </div>
+                            <div class="fila">
+                              <span class="tminu cminu100">26</span>
+                              <span class="tminu cminu101">126</span>
+                              <span class="tminu cminu102">15</span>
+                              <span class="tminu cminu103">7</span>
+                              <span class="tminu cminu104">64</span>
+                              <span class="tminu cminu105">150</span>
+                              <span class="tminu cminu106">57</span>
+                              <span class="tminu cminu107">48</span>
+                              <span class="tminu cminu108">19</span>
+                              <span class="tminu cminu109">31</span>
+                              <span class="tminu cminu1010">108</span>
+
+                           </div>
+
+                            <div class="fila">
+                              <span class="tminu cminu110">9</span>
+                              <span class="tminu cminu111">56</span>
+                              <span class="tminu cminu112">132</span>
+                              <span class="tminu cminu113">34</span>
+                              <span class="tminu cminu114">125</span>
+                              <span class="tminu cminu115">29</span>
+                              <span class="tminu cminu116">175</span>
+                              <span class="tminu cminu117">166</span>
+                              <span class="tminu cminu118">82</span>
+                              <span class="tminu cminu119">164</span>
+                              <span class="tminu cminu1110">92</span>
+                            </div>
+
+                            <div class="fila">
+                              <span class="tminu cminu120">112</span>
+                              <span class="tminu cminu121">174</span>
+                              <span class="tminu cminu122">73</span>
+                              <span class="tminu cminu123">67</span>
+                              <span class="tminu cminu124">76</span>
+                              <span class="tminu cminu125">101</span>
+                              <span class="tminu cminu126">43</span>
+                              <span class="tminu cminu127">51</span>
+                              <span class="tminu cminu128">137</span>
+                              <span class="tminu cminu129">144</span>
+                              <span class="tminu cminu1210">12</span>
+                           </div>
+
+                            <div class="fila">
+                                <span class="tminu cminu130">49</span>
+                                <span class="tminu cminu131">18</span>
+                                <span class="tminu cminu132">58</span>
+                                <span class="tminu cminu133">160</span>
+                                <span class="tminu cminu134">136</span>
+                                <span class="tminu cminu135">162</span>
+                                <span class="tminu cminu136">168</span>
+                                <span class="tminu cminu137">115</span>
+                                <span class="tminu cminu138">38</span>
+                                <span class="tminu cminu139">59</span>
+                                <span class="tminu cminu1310">124</span>
+                            </div>
+
+                            <div class="fila">
+                              <span class="tminu cminu140">109</span>
+                              <span class="tminu cminu141">116</span>
+                              <span class="tminu cminu142">145</span>
+                              <span class="tminu cminu143">52</span>
+                              <span class="tminu cminu144">1</span>
+                              <span class="tminu cminu145">23</span>
+                              <span class="tminu cminu146">89</span>
+                              <span class="tminu cminu147">72</span>
+                              <span class="tminu cminu148">149</span>
+                              <span class="tminu cminu149">173</span>
+                              <span class="tminu cminu1410">44</span>
+                            </div>
+
+                            <div class="fila">
+                              <span class="tminu cminu150">14</span>
+                              <span class="tminu cminu151">83</span>
+                              <span class="tminu cminu152">79</span>
+                              <span class="tminu cminu153">170</span>
+                              <span class="tminu cminu154">93</span>
+                              <span class="tminu cminu155">151</span>
+                              <span class="tminu cminu156">172</span>
+                              <span class="tminu cminu157">111</span>
+                              <span class="tminu cminu158">8</span>
+                              <span class="tminu cminu159">78</span>
+                              <span class="tminu cminu1510">131</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tablero1 hidden-xs {{@hiddenWhenShared}}" id="tablaMinuetos">
+                        <div class="titulo">Parte 1</div>
+                        <div class="interior">
+
+                            <div class="fila">
+                                <div class="mdados mdados2"></div>
+                                <span class="tminu cminu000">96</span>
+                                <span class="tminu cminu010">22</span>
+                                <span class="tminu cminu020">141</span>
+                                <span class="tminu cminu030">41</span>
+                                <span class="tminu cminu040">105</span>
+                                <span class="tminu cminu050">122</span>
+                                <span class="tminu cminu060">11</span>
+                                <span class="tminu cminu070">30</span>
+                                <span class="tminu cminu080">70</span>
+                                <span class="tminu cminu090">121</span>
+                                <span class="tminu cminu100">26</span>
+                                <span class="tminu cminu110">9</span>
+                                <span class="tminu cminu120">112</span>
+                                <span class="tminu cminu130">49</span>
+                                <span class="tminu cminu140">109</span>
+                                <span class="tminu cminu150">14</span>
+                            </div>
+
+                            <div class="fila">
+                                <div class="mdados mdados3"></div>
+                                <span class="tminu cminu001">32</span>
+                                <span class="tminu cminu011">6</span>
+                                <span class="tminu cminu021">128</span>
+                                <span class="tminu cminu031">63</span>
+                                <span class="tminu cminu041">146</span>
+                                <span class="tminu cminu051">46</span>
+                                <span class="tminu cminu061">134</span>
+                                <span class="tminu cminu071">81</span>
+                                <span class="tminu cminu081">117</span>
+                                <span class="tminu cminu091">39</span>
+                                <span class="tminu cminu101">126</span>
+                                <span class="tminu cminu111">56</span>
+                                <span class="tminu cminu121">174</span>
+                                <span class="tminu cminu131">18</span>
+                                <span class="tminu cminu141">116</span>
+                                <span class="tminu cminu151">83</span>
+                            </div>
+
+                            <div class="fila">
+                                <div class="mdados mdados4"></div>
+                                <span class="tminu cminu002">69</span>
+                                <span class="tminu cminu012">95</span>
+                                <span class="tminu cminu022">158</span>
+                                <span class="tminu cminu032">13</span>
+                                <span class="tminu cminu042">153</span>
+                                <span class="tminu cminu052">55</span>
+                                <span class="tminu cminu062">110</span>
+                                <span class="tminu cminu072">24</span>
+                                <span class="tminu cminu082">66</span>
+                                <span class="tminu cminu092">139</span>
+                                <span class="tminu cminu102">15</span>
+                                <span class="tminu cminu112">132</span>
+                                <span class="tminu cminu122">73</span>
+                                <span class="tminu cminu132">58</span>
+                                <span class="tminu cminu142">145</span>
+                                <span class="tminu cminu152">79</span>
+                            </div>
+
+                            <div class="fila">
+                                <div class="mdados mdados5"></div>
+                                <span class="tminu cminu003">40</span>
+                                <span class="tminu cminu013">17</span>
+                                <span class="tminu cminu023">113</span>
+                                <span class="tminu cminu033">85</span>
+                                <span class="tminu cminu043">161</span>
+                                <span class="tminu cminu053">2</span>
+                                <span class="tminu cminu063">159</span>
+                                <span class="tminu cminu073">100</span>
+                                <span class="tminu cminu083">90</span>
+                                <span class="tminu cminu093">176</span>
+                                <span class="tminu cminu103">7</span>
+                                <span class="tminu cminu113">34</span>
+                                <span class="tminu cminu123">67</span>
+                                <span class="tminu cminu133">160</span>
+                                <span class="tminu cminu143">52</span>
+                                <span class="tminu cminu153">170</span>
+                            </div>
+
+
+                            <div class="fila">
+                                <div class="mdados mdados6"></div>
+                                <span class="tminu cminu004">148</span>
+                                <span class="tminu cminu014">74</span>
+                                <span class="tminu cminu024">163</span>
+                                <span class="tminu cminu034">45</span>
+                                <span class="tminu cminu044">80</span>
+                                <span class="tminu cminu054">97</span>
+                                <span class="tminu cminu064">36</span>
+                                <span class="tminu cminu074">107</span>
+                                <span class="tminu cminu084">25</span>
+                                <span class="tminu cminu094">143</span>
+                                <span class="tminu cminu104">64</span>
+                                <span class="tminu cminu114">125</span>
+                                <span class="tminu cminu124">76</span>
+                                <span class="tminu cminu134">136</span>
+                                <span class="tminu cminu144">1</span>
+                                <span class="tminu cminu154">93</span>
+                            </div>
+
+
+                            <div class="fila">
+                                <div class="mdados mdados7"></div>
+                                <span class="tminu cminu005">104</span>
+                                <span class="tminu cminu015">157</span>
+                                <span class="tminu cminu025">27</span>
+                                <span class="tminu cminu035">167</span>
+                                <span class="tminu cminu045">154</span>
+                                <span class="tminu cminu055">68</span>
+                                <span class="tminu cminu065">118</span>
+                                <span class="tminu cminu075">91</span>
+                                <span class="tminu cminu085">138</span>
+                                <span class="tminu cminu095">71</span>
+                                <span class="tminu cminu105">150</span>
+                                <span class="tminu cminu115">29</span>
+                                <span class="tminu cminu125">101</span>
+                                <span class="tminu cminu135">162</span>
+                                <span class="tminu cminu145">23</span>
+                                <span class="tminu cminu155">151</span>
+                            </div>
+
+
+
+                            <div class="fila">
+                               <div class="mdados mdados8"></div>
+                               <span class="tminu cminu006">152</span>
+                               <span class="tminu cminu016">60</span>
+                               <span class="tminu cminu026">171</span>
+                               <span class="tminu cminu036">53</span>
+                               <span class="tminu cminu046">99</span>
+                               <span class="tminu cminu056">133</span>
+                               <span class="tminu cminu066">21</span>
+                               <span class="tminu cminu076">127</span>
+                               <span class="tminu cminu086">16</span>
+                               <span class="tminu cminu096">155</span>
+                               <span class="tminu cminu106">57</span>
+                               <span class="tminu cminu116">175</span>
+                               <span class="tminu cminu126">43</span>
+                               <span class="tminu cminu136">168</span>
+                               <span class="tminu cminu146">89</span>
+                               <span class="tminu cminu156">172</span>
+                           </div>
+
+                            <div class="fila">
+                                <div class="mdados mdados9"></div>
+                                <span class="tminu cminu007">119</span>
+                                <span class="tminu cminu017">84</span>
+                                <span class="tminu cminu027">114</span>
+                                <span class="tminu cminu037">50</span>
+                                <span class="tminu cminu047">140</span>
+                                <span class="tminu cminu057">86</span>
+                                <span class="tminu cminu067">169</span>
+                                <span class="tminu cminu077">94</span>
+                                <span class="tminu cminu087">120</span>
+                                <span class="tminu cminu097">88</span>
+                                <span class="tminu cminu107">48</span>
+                                <span class="tminu cminu117">166</span>
+                                <span class="tminu cminu127">51</span>
+                                <span class="tminu cminu137">115</span>
+                                <span class="tminu cminu147">72</span>
+                                <span class="tminu cminu157">111</span>
+                            </div>
+
+                            <div class="fila">
+                                <div class="mdados mdados10"></div>
+                                <span class="tminu cminu008">98</span>
+                                <span class="tminu cminu018">142</span>
+                                <span class="tminu cminu028">42</span>
+                                <span class="tminu cminu038">156</span>
+                                <span class="tminu cminu048">75</span>
+                                <span class="tminu cminu058">129</span>
+                                <span class="tminu cminu068">62</span>
+                                <span class="tminu cminu078">123</span>
+                                <span class="tminu cminu088">65</span>
+                                <span class="tminu cminu098">77</span>
+                                <span class="tminu cminu108">19</span>
+                                <span class="tminu cminu118">82</span>
+                                <span class="tminu cminu128">137</span>
+                                <span class="tminu cminu138">38</span>
+                                <span class="tminu cminu148">149</span>
+                                <span class="tminu cminu158">8</span>
+                            </div>
+
+
+                            <div class="fila">
+                                <div class="mdados mdados11"></div>
+                                <span class="tminu cminu009">3</span>
+                                <span class="tminu cminu019">87</span>
+                                <span class="tminu cminu029">165</span>
+                                <span class="tminu cminu039">61</span>
+                                <span class="tminu cminu049">135</span>
+                                <span class="tminu cminu059">47</span>
+                                <span class="tminu cminu069">147</span>
+                                <span class="tminu cminu079">33</span>
+                                <span class="tminu cminu089">102</span>
+                                <span class="tminu cminu099">4</span>
+                                <span class="tminu cminu109">31</span>
+                                <span class="tminu cminu119">164</span>
+                                <span class="tminu cminu129">144</span>
+                                <span class="tminu cminu139">59</span>
+                                <span class="tminu cminu149">173</span>
+                                <span class="tminu cminu159">78</span>
+                            </div>
+
+                            <div class="fila">
+                                <div class="mdados mdados12"></div>
+                                <span class="tminu cminu0010">54</span>
+                                <span class="tminu cminu0110">130</span>
+                                <span class="tminu cminu0210">10</span>
+                                <span class="tminu cminu0310">103</span>
+                                <span class="tminu cminu0410">28</span>
+                                <span class="tminu cminu0510">37</span>
+                                <span class="tminu cminu0610">106</span>
+                                <span class="tminu cminu0710">5</span>
+                                <span class="tminu cminu0810">35</span>
+                                <span class="tminu cminu0910">20</span>
+                                <span class="tminu cminu1010">108</span>
+                                <span class="tminu cminu1110">92</span>
+                                <span class="tminu cminu1210">12</span>
+                                <span class="tminu cminu1310">124</span>
+                                <span class="tminu cminu1410">44</span>
+                                <span class="tminu cminu1510">131</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- tabla trios mobile -->
+                    <div class="tablero1 visible-xs {{@hiddenWhenShared}}" id="tablaTrios">
+                        <div class="titulo">Parte 2</div>
+
+                        <div class="interior">
+                          <div class="fila">
+
+                                <div class="tminu mdados"><span class="dado2"></span></div>
+                                <div class="tminu mdados "><span class="dado3"></span></div>
+                                <div class="tminu mdados "><span class="dado4"></span></div>
+                                <div class="tminu mdados "><span class="dado5"></span></div>
+                                <div class="tminu mdados "><span class="dado6"></span></div>
+                                <div class="tminu mdados "><span class="dado7"></span></div>
+
+
+                            </div>
+                              <div class="fila">
+                                <span class="tminu ctrio000">72</span>
+                                <span class="tminu ctrio001">56</span>
+                                <span class="tminu ctrio002">75</span>
+                                <span class="tminu ctrio003">40</span>
+                                <span class="tminu ctrio004">83</span>
+                                <span class="tminu ctrio005">18</span>
+                              </div>
+                              <div class="fila">
+                                <span class="tminu ctrio010">6</span>
+                                <span class="tminu ctrio011">82</span>
+                                <span class="tminu ctrio012">39</span>
+                                <span class="tminu ctrio013">73</span>
+                                <span class="tminu ctrio014">3</span>
+                                <span class="tminu ctrio015">45</span>
+                              </div>
+
+                              <div class="fila">
+                                <span class="tminu ctrio020">59</span>
+                                <span class="tminu ctrio021">42</span>
+                                <span class="tminu ctrio022">54</span>
+                                <span class="tminu ctrio023">16</span>
+                                <span class="tminu ctrio024">28</span>
+                                <span class="tminu ctrio025">62</span>
+                              </div>
+                              <div class="fila">
+                                <span class="tminu ctrio030">25</span>
+                                <span class="tminu ctrio031">74</span>
+                                <span class="tminu ctrio032">1</span>
+                                <span class="tminu ctrio033">68</span>
+                                <span class="tminu ctrio034">53</span>
+                                <span class="tminu ctrio035">38</span>
+                              </div>
+                              <div class="fila">
+                                <span class="tminu ctrio040">81</span>
+                                <span class="tminu ctrio041">14</span>
+                                <span class="tminu ctrio042">65</span>
+                                <span class="tminu ctrio043">29</span>
+                                <span class="tminu ctrio044">37</span>
+                                <span class="tminu ctrio045">4</span>
+                             </div>
+                              <div class="fila">
+                                  <span class="tminu ctrio050">41</span>
+                                  <span class="tminu ctrio051">7</span>
+                                  <span class="tminu ctrio052">43</span>
+                                  <span class="tminu ctrio053">55</span>
+                                  <span class="tminu ctrio054">17</span>
+                                  <span class="tminu ctrio055">27</span>
+                              </div>
+                              <div class="fila">
+                                <span class="tminu ctrio060">89</span>
+                                <span class="tminu ctrio061">26</span>
+                                <span class="tminu ctrio062">15</span>
+                                <span class="tminu ctrio063">2</span>
+                                <span class="tminu ctrio064">44</span>
+                                <span class="tminu ctrio065">52</span>
+                              </div>
+                              <div class="fila">
+                                <span class="tminu ctrio070">13</span>
+                                <span class="tminu ctrio071">71</span>
+                                <span class="tminu ctrio072">80</span>
+                                <span class="tminu ctrio073">61</span>
+                                <span class="tminu ctrio074">70</span>
+                                <span class="tminu ctrio075">94</span>
+                             </div>
+                            <div class="fila">
+                              <span class="tminu ctrio080">36</span>
+                              <span class="tminu ctrio081">76</span>
+                              <span class="tminu ctrio082">9</span>
+                              <span class="tminu ctrio083">22</span>
+                              <span class="tminu ctrio084">63</span>
+                              <span class="tminu ctrio085">11</span>
+                             </div>
+
+                            <div class="fila">
+                              <span class="tminu ctrio090">5</span>
+                              <span class="tminu ctrio091">20</span>
+                              <span class="tminu ctrio092">34</span>
+                              <span class="tminu ctrio093">67</span>
+                              <span class="tminu ctrio094">85</span>
+                              <span class="tminu ctrio095">92</span>
+                            </div>
+
+                            <div class="fila">
+                               <span class="tminu ctrio100">46</span>
+                               <span class="tminu ctrio101">64</span>
+                               <span class="tminu ctrio102">93</span>
+                              <span class="tminu ctrio103">49</span>
+                              <span class="tminu ctrio104">32</span>
+                               <span class="tminu ctrio105">24</span>
+                            </div>
+
+                            <div class="fila">
+                              <span class="tminu ctrio110">79</span>
+                              <span class="tminu ctrio111">84</span>
+                              <span class="tminu ctrio112">48</span>
+                              <span class="tminu ctrio113">77</span>
+                              <span class="tminu ctrio114">96</span>
+                              <span class="tminu ctrio115">86</span>
+                           </div>
+                          <div class="fila">
+                            <span class="tminu ctrio120">30</span>
+                            <span class="tminu ctrio121">8</span>
+                            <span class="tminu ctrio122">69</span>
+                            <span class="tminu ctrio123">57</span>
+                            <span class="tminu ctrio124">12</span>
+                            <span class="tminu ctrio125">51</span>
+                          </div>
+                          <div class="fila">
+                             <span class="tminu ctrio130">95</span>
+                             <span class="tminu ctrio131">35</span>
+                            <span class="tminu ctrio132">58</span>
+                            <span class="tminu ctrio133">87</span>
+                             <span class="tminu ctrio134">23</span>
+                            <span class="tminu ctrio135">60</span>
+                          </div>
+                          <div class="fila">
+                            <span class="tminu ctrio140">19</span>
+                            <span class="tminu ctrio141">47</span>
+                            <span class="tminu ctrio142">90</span>
+                            <span class="tminu ctrio143">33</span>
+                            <span class="tminu ctrio144">50</span>
+                            <span class="tminu ctrio145">78</span>
+                          </div>
+                          <div class="fila">
+                            <span class="tminu ctrio150">66</span>
+                            <span class="tminu ctrio151">88</span>
+                            <span class="tminu ctrio152">21</span>
+                            <span class="tminu ctrio153">10</span>
+                            <span class="tminu ctrio154">91</span>
+                            <span class="tminu ctrio155">31</span>
+                          </div>
+
+
+                        </div>
+                    </div>
+                    <!-- fin tabla trios mobile -->
+
+                    <div class="tablero1 hidden-xs {{@hiddenWhenShared}}" id="tablaTrios">
+                        <div class="titulo">Parte 2</div>
+                        <div class="interior">
+                            <div class="fila">
+                                <div class="mdados mdadostrio1"></div>
+                                <span class="tminu ctrio000">72</span>
+                                <span class="tminu ctrio010">6</span>
+                                <span class="tminu ctrio020">59</span>
+                                <span class="tminu ctrio030">25</span>
+                                <span class="tminu ctrio040">81</span>
+                                <span class="tminu ctrio050">41</span>
+                                <span class="tminu ctrio060">89</span>
+                                <span class="tminu ctrio070">13</span>
+                                <span class="tminu ctrio080">36</span>
+                                <span class="tminu ctrio090">5</span>
+                                <span class="tminu ctrio100">46</span>
+                                <span class="tminu ctrio110">79</span>
+                                <span class="tminu ctrio120">30</span>
+                                <span class="tminu ctrio130">95</span>
+                                <span class="tminu ctrio140">19</span>
+                                <span class="tminu ctrio150">66</span>
+                            </div>
+
+                            <div class="fila">
+                                <div class="mdados mdadostrio2"></div>
+                                <span class="tminu ctrio001">56</span>
+                                <span class="tminu ctrio011">82</span>
+                                <span class="tminu ctrio021">42</span>
+                                <span class="tminu ctrio031">74</span>
+                                <span class="tminu ctrio041">14</span>
+                                <span class="tminu ctrio051">7</span>
+                                <span class="tminu ctrio061">26</span>
+                                <span class="tminu ctrio071">71</span>
+                                <span class="tminu ctrio081">76</span>
+                                <span class="tminu ctrio091">20</span>
+                                <span class="tminu ctrio101">64</span>
+                                <span class="tminu ctrio111">84</span>
+                                <span class="tminu ctrio121">8</span>
+                                <span class="tminu ctrio131">35</span>
+                                <span class="tminu ctrio141">47</span>
+                                <span class="tminu ctrio151">88</span>
+                            </div>
+
+
+                            <div class="fila">
+                                <div class="mdados mdadostrio3"></div>
+                                <span class="tminu ctrio002">75</span>
+                                <span class="tminu ctrio012">39</span>
+                                <span class="tminu ctrio022">54</span>
+                                <span class="tminu ctrio032">1</span>
+                                <span class="tminu ctrio042">65</span>
+                                <span class="tminu ctrio052">43</span>
+                                <span class="tminu ctrio062">15</span>
+                                <span class="tminu ctrio072">80</span>
+                                <span class="tminu ctrio082">9</span>
+                                <span class="tminu ctrio092">34</span>
+                                <span class="tminu ctrio102">93</span>
+                                <span class="tminu ctrio112">48</span>
+                                <span class="tminu ctrio122">69</span>
+                                <span class="tminu ctrio132">58</span>
+                                <span class="tminu ctrio142">90</span>
+                                <span class="tminu ctrio152">21</span>
+                            </div>
+
+
+                            <div class="fila">
+                                <div class="mdados mdadostrio4"></div>
+                                <span class="tminu ctrio003">40</span>
+                                <span class="tminu ctrio013">73</span>
+                                <span class="tminu ctrio023">16</span>
+                                <span class="tminu ctrio033">68</span>
+                                <span class="tminu ctrio043">29</span>
+                                <span class="tminu ctrio053">55</span>
+                                <span class="tminu ctrio063">2</span>
+                                <span class="tminu ctrio073">61</span>
+                                <span class="tminu ctrio083">22</span>
+                                <span class="tminu ctrio093">67</span>
+                                <span class="tminu ctrio103">49</span>
+                                <span class="tminu ctrio113">77</span>
+                                <span class="tminu ctrio123">57</span>
+                                <span class="tminu ctrio133">87</span>
+                                <span class="tminu ctrio143">33</span>
+                                <span class="tminu ctrio153">10</span>
+                            </div>
+
+                            <div class="fila">
+                                <div class="mdados mdadostrio5"></div>
+                                <span class="tminu ctrio004">83</span>
+                                <span class="tminu ctrio014">3</span>
+                                <span class="tminu ctrio024">28</span>
+                                <span class="tminu ctrio034">53</span>
+                                <span class="tminu ctrio044">37</span>
+                                <span class="tminu ctrio054">17</span>
+                                <span class="tminu ctrio064">44</span>
+                                <span class="tminu ctrio074">70</span>
+                                <span class="tminu ctrio084">63</span>
+                                <span class="tminu ctrio094">85</span>
+                                <span class="tminu ctrio104">32</span>
+                                <span class="tminu ctrio114">96</span>
+                                <span class="tminu ctrio124">12</span>
+                                <span class="tminu ctrio134">23</span>
+                                <span class="tminu ctrio144">50</span>
+                                <span class="tminu ctrio154">91</span>
+                            </div>
+                            <div class="fila">
+                                <div class="mdados mdadostrio6"></div>
+                                <span class="tminu ctrio005">18</span>
+                                <span class="tminu ctrio015">45</span>
+                                <span class="tminu ctrio025">62</span>
+                                <span class="tminu ctrio035">38</span>
+                                <span class="tminu ctrio045">4</span>
+                                <span class="tminu ctrio055">27</span>
+                                <span class="tminu ctrio065">52</span>
+                                <span class="tminu ctrio075">94</span>
+                                <span class="tminu ctrio085">11</span>
+                                <span class="tminu ctrio095">92</span>
+                                <span class="tminu ctrio105">24</span>
+                                <span class="tminu ctrio115">86</span>
+                                <span class="tminu ctrio125">51</span>
+                                <span class="tminu ctrio135">60</span>
+                                <span class="tminu ctrio145">78</span>
+                                <span class="tminu ctrio155">31</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="control" class="">
+                        <div class="game-step {{@hiddenWhenShared}}">
+                            <span class="presentation-steps-number">2</span>
+                            <span class="game-step-text"><h3>Escucha la melodía única que acabas de crear</h3></span>
+                        </div>
+
+                        <div class="game-selected">
+                            <div class="fila_control" id="selected-first-part">
+                                <div class="titulo">Parte 1</div>
+                                <div class="control_minueto">
+                                    <div class="docu" posiMinu=0>&nbsp;</div>
+                                    <div class="docu" posiMinu=1>&nbsp;</div>
+                                    <div class="docu" posiMinu=2>&nbsp;</div>
+                                    <div class="docu" posiMinu=3>&nbsp;</div>
+                                    <div class="docu" posiMinu=4>&nbsp;</div>
+                                    <div class="docu" posiMinu=5>&nbsp;</div>
+                                    <div class="docu" posiMinu=6>&nbsp;</div>
+                                    <div class="docu" posiMinu=7>&nbsp;</div>
+                                    <div class="docu" posiMinu=8>&nbsp;</div>
+                                    <div class="docu" posiMinu=9>&nbsp;</div>
+                                    <div class="docu" posiMinu=10>&nbsp;</div>
+                                    <div class="docu" posiMinu=11>&nbsp;</div>
+                                    <div class="docu" posiMinu=12>&nbsp;</div>
+                                    <div class="docu" posiMinu=13>&nbsp;</div>
+                                    <div class="docu" posiMinu=14>&nbsp;</div>
+                                    <div class="docu" posiMinu=15>&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="fila_control" id="selected-second-part">
+                                <div class="titulo">Parte 2</div>
+                                <div class="control_trio">
+                                    <div class="trio" posiTrio=0>&nbsp;</div>
+                                    <div class="trio" posiTrio=1>&nbsp;</div>
+                                    <div class="trio" posiTrio=2>&nbsp;</div>
+                                    <div class="trio" posiTrio=3>&nbsp;</div>
+                                    <div class="trio" posiTrio=4>&nbsp;</div>
+                                    <div class="trio" posiTrio=5>&nbsp;</div>
+                                    <div class="trio" posiTrio=6>&nbsp;</div>
+                                    <div class="trio" posiTrio=7>&nbsp;</div>
+                                    <div class="trio" posiTrio=8>&nbsp;</div>
+                                    <div class="trio" posiTrio=9>&nbsp;</div>
+                                    <div class="trio" posiTrio=10>&nbsp;</div>
+                                    <div class="trio" posiTrio=11>&nbsp;</div>
+                                    <div class="trio" posiTrio=12>&nbsp;</div>
+                                    <div class="trio" posiTrio=13>&nbsp;</div>
+                                    <div class="trio" posiTrio=14>&nbsp;</div>
+                                    <div class="trio" posiTrio=15>&nbsp;</div>
+                                </div>
+                            </div>
+
+                            <!-- Player -->
+                            <div id="player" class="player ">
+                                <span class="btnplaymobile">
+                                    <button type="button" id="btnPlay" class="btn btn-default">
+                                        <img src="/assets/images/btnplay-round.png">
+                                    </button>
+                                </span>
+
+                                <div class="tablaturas">
+                                    <!-- imágenes de las tablaturas -->
+                                </div>
+
+                                <canvas id="canvas"></canvas>
+                            </div>
+                            <!-- end Player -->
+
+                            <button type="button" id="btnPlay" class="btn btn-default btnplaystandar"></button>
+                        </div>
+                    </div>
+
+                    <!-- capa compartir -->
+                    <div class="capacreacion">
+                        <div class="game-step {{@hiddenWhenShared}}">
+                            <span class="presentation-steps-number">3</span>
+                            <span class="game-step-text"><h3>¡Enhorabuena, has creado una melodía nunca antes escuchada!<br><span>Elige un nombre y compártela.</span></h3></span>
+                        </div>
+
+                        <div class="container game-sharing">
+                            <div class="row saveMinuet {{@hiddenWhenShared}}">
+                                <div class="col-md-12">
+                                    <form class="form-inline">
+                                        <p for="fnombre">Nombre de tu minueto</p>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="fnombre" placeholder="Pon nombre a tu melodía" disabled="disabled">
+                                        </div>
+                                        <a type="button" class="btn btnSave" disabled="disabled">Guarda tu minueto</a>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7 social-links">
+                                    <p>Comparte esta melodía</p>
+                                    <div class="botonera_social">
+                                        <a target="_blank" id="btnTwitter" class="btn btn-labeled" disabled="disabled">
+                                            <span class="btn-label twitterButton"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                            Compartir en Twitter
+                                        </a>
+                                        <a target="_blank" id="btnFacebook" class="btn btn-labeled" disabled="disabled">
+                                            <span class="btn-label fbButton"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                            Compartir en Facebook
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-5 minuet-link">
+                                    <form class="form-inline">
+                                        <p><a id="minuetLink">Link a tu minueto</a></p>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="furl" name="furl" placeholder="http://ejemplo.com/ejemplo" disabled>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin de capa compartir -->
+
+                    <!-- Footer Aside -->
+                    <div class="container footer-aside {{@hiddenWhenShared}}">
+                        <div class="row">
+                            <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1
+                            ">
+                                <div class="footer_creacion">
+                                    <div class="title"><h3>Curiosidades</h3></div>
+                                    <div class="parrafo">
+                                        <p>Hay más de 120.000 cuatrillones de posibles melodías en este juego filarmónico del siglo XVIII.</p>
+                                        <p>Lee más detalles curiosos en <strong><a href="/historia" onclick="$('body').scrollTo(0)">la historia completa<span class="glyphicon glyphicon-triangle-right"></span></a></strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-md-offset-1 col-sm-4">
+                                <img src="/assets/images/fotos-manuscrito.png" class="img-responsive" alt="Imágenes del manuscrito del Conde de la Rosa" title="Manuscrito Juego Filarmónico de Haydn del Conde de la Rosa" width="300">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Footer Aside -->
+
+                </div>
+                <!-- end Game Content -->
+
+            </div>
+            <!-- end Game Tab Content -->
+
+            <!-- Temporary Copy of Jumbotron Header -->
+            <div class="jumbotron header-aux {{@visibleWhenShared}}">
+                <div class="container">
+                    <div class="header-text">
+                        <div class="row">
+                            <div class="col-md-8 header-intro">
+                                <h2>La historia del Juego Filarmónico</h2>
+                                <p>El Juego Filarmónico fue concebido como un entretenimiento destinado a las reuniones sociales, pero también como un estudio teórico de composición musical. Mediante un sencillo juego de dados, cualquier persona sin conocimientos musicales podía componer infinidad de pequeñas piezas en forma de minué, el baile de salón más popular de la época.</p>
+                                <p><a href="/historia" data-toggle="tab" onclick="$('body').scrollTo(0)" id="jumbotronLink"><span><strong>Lee la historia y descarga el documento original </strong></span><span class="glyphicon glyphicon-triangle-right"></span></a></p>
+                            </div>
+
+                            <div class="col-md-4 header-image">
+                                <img src="/assets/images/dancing-dark.jpg" alt="Imagen de baile de salón del siglo XVIII" title="Escena de baile de salón del siglo XVIII" width="300">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end Temporary Copy of Jumbotron Header -->
+
+        </div>
+
+        <!-- Page Footer -->
+        <footer class="footer">
+            <div class="container page-footer">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-1 page-footer-counter">
+                        <p>Minuetos creados</p>
+                        <p id="minueCounter">{{@count}}</p>
+                    </div>
+                    <div class="footer-logos">
+                      <div class="col-md-1 col-xs-6 col-sm-1 page-footer-logoBNE">
+                          <a href="http://www.bne.es/es/Inicio/index.html"><img src="/assets/images/logoBNEpositivo.png" alt="Logo de la Biblioteca Nacional de España" title="Logo de la Biblioteca Nacional de España" width="45"></a>
+                      </div>
+
+                      <div class="col-md-2 col-xs-6 col-sm-2 page-footer-redes">
+                          <a href="http://www.red.es/redes/"><img src="/assets/images/logo_redes.png" alt="Logo de Red.es" title="Logo de Red.es" width="90"></a>
+                      </div>
+
+                    </div>
+
+                    <div class="col-md-4 col-sm-5 page-footer-copyright">
+                        <ul>
+                            <li><a href="http://www.bne.es/es/NavegacionRecursiva/Pie/Cookies/">Política de cookies</a></li>
+                            <li>© 2016 BNE</li>
+                            <li>Pº Recoletos, 20-22, 28020 Madrid</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end Page Footer -->
+
+
+
+    </body>
+
+
+    <script src="./assets/js/jquery-3.1.0.min.js"></script>
+    <script src="./assets/js/jquery.scrollTo.min.js"></script>
+
+    <script src="./assets/inc/shim/shim.min.js" type="text/javascript"></script>
+    <script src="./assets/js/jquery.html5-placeholder-shim.js" type="text/javascript"></script>
+
+    <!-- midi.js package -->
+    <script src="./assets/js/midi/audioDetect.js" type="text/javascript"></script>
+    <script src="./assets/js/midi/gm.js" type="text/javascript"></script>
+    <script src="./assets/js/midi/loader.js" type="text/javascript"></script>
+
+
+    <script src="./assets/js/midi/plugin.audiotag.js" type="text/javascript"></script>
+    <script src="./assets/js/midi/plugin.webaudio.js" type="text/javascript"></script>
+    <script src="./assets/js/midi/plugin.webmidi.js" type="text/javascript"></script>
+
+    <!-- utils -->
+    <script src="./assets/js/util/dom_request_xhr.js" type="text/javascript"></script>
+    <script src="./assets/js/util/dom_request_script.js" type="text/javascript"></script>
+
+    <!--<script src="/assets/js/midi/player.js" type="text/javascript"></script>-->
+    <script src="./assets/js/midi.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>Historia del Juego filarmónico</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="title" content="Historia del Juego filarmónico">
+		<meta name="description" content="Descubre la historia del juego filarmónico. La Biblioteca Nacional de España te trae el manuscrito con el que poder crear tus propios minuetos.">
+		<meta name="keywords" content="juego filarmonico, juego musical, musica clasica, historia del juego filarmonico, historia de la musica clasica">
+		<meta name="robots" content="index, follow">
+		<link href="http://juegofilarmonico.bne.es/" rel="canonical" />
+
+		<!-- Twitter meta tags -->
+		<meta name='twitter:card' content='summary_large_image' />
+		<meta name='twitter:image' content="http://juegofilarmonico.bne.es/assets/images/ejemplo-player.png" />
+		<meta name='twitter:site' content='' />
+		<meta name='twitter:url' content='http://juegofilarmonico.bne.es/'/>
+		<meta name='twitter:description' content="Descubre cómo crear tu propio minueto y la historia que se esconde detrás del Juego filarmónico de la Biblioteca Nacional de España." />
+		<meta name='twitter:title' content='Historia del Juego filarmónico' />
+
+		<!-- Facebook meta tags -->
+		<meta property="og:url" content="http://juegofilarmonico.bne.es/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Historia del Juego filarmónico" />
+		<meta property="og:description" content="Descubre cómo crear tu propio minueto y la historia que hay detrás del Juego filarmónico de la Biblioteca Nacional de España." />
+		<meta property="og:image" content="http://juegofilarmonico.bne.es/assets/images/ejemplo-player.png" />
+
+		<!-- CSS & stylesheets -->
+		<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+		<link href="/assets/css/estilos.css" media="all" rel="stylesheet" />
+		<link href="/assets/css/responsive.css" media="all" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+		<!-- Favicons -->
+		<link rel="icon" href="/favicon.ico">
+		<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+		<link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+
+		<!-- jQuery library -->
+		<script src="/assets/js/jquery-3.1.0.min.js"></script>
+
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-xxxxx-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<!-- End Google Analytics -->
+
+		<!-- Arrows in History collapse display -->
+		<script>
+			$(document).ready(function() {
+				var screenWidth = parseInt($(window).width());
+				if(screenWidth < 800) {
+					$(".subtitulo-historia").unbind("click");
+					$(".subtitulo-historia").bind("click", function(e) {
+						var id = $(this).attr("id");
+						var idcontent = id.replace("titulo-", "");
+						if ($("." + idcontent).css("display") == "none") {
+							$("." + idcontent).css("display", "block");
+							$(this).find("span").toggleClass("glyphicon-triangle-top").toggleClass("glyphicon-triangle-bottom");
+						} else {
+							$("." + idcontent).css("display", "none");
+							$(this).find("span").toggleClass("glyphicon-triangle-bottom").toggleClass("glyphicon-triangle-top");
+						}
+					});
+				}
+			});
+		</script>
+
+		<!-- Change contents order in one section if screen width < 992 -->
+		<script>
+			$(document).ready(function() {
+				var screenWidth = parseInt($(window).width());
+				if(screenWidth <= 800) {
+					$(".funciona-juego .col-md-4").insertAfter(".funciona-juego .col-md-8");
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<!-- Navigation bar -->
+	    <nav class="navbar navbar-static-top" role="navigation">
+	        <div class="container-fluid container-menu tabbed">
+	            <div class="navbar-header">
+	                <a href="/" class="navbar-brand">
+	                    <img src="/assets/images/logoBNE.png" alt="Logo de la Biblioteca Nacional de España" title="Logo de la Biblioteca Nacional de España">
+	                </a>
+	                <a href="/" class="navbar-brand">
+	                    <p id="historiaTitle">Juego Filarmónico</p>
+	                </a>
+	            </div>
+	            <ul class="navbar-nav navbar-right tabs">
+	                <li id="menuJuego"><a href="/">Juego</a></li>
+	                <li class="active" id="menuHistoria"><a href="/historia">Historia</a></li>
+	            </ul>
+	        </div>
+	    </nav>
+	    <!-- end Navigation bar -->
+
+	    <!-- History Tab Content -->
+	    <div id="historiaTab" class="theme-showcase main-content" role="tabpanel">
+	        <div class="row">
+	            <div class="container">
+	                <div class="col-md-12">
+	                    <h1 class="titulo-historia">HISTORIA</h1>
+	                </div>
+
+	                <div class="col-md-12 subtitulo-historia" id="titulo-historia-juego">
+	                    <h2>El Juego filarmónico  <a class="flecha-mobile" id="flecha-juego"><span class="glyphicon glyphicon-triangle-bottom"></span></a></h2>
+	                </div>
+
+	                <div class="historia-juego contenido-historia">
+	                  	<div class="col-md-8">
+							<p>Los “Musikalisches Würfelspiel” o “Juegos de dados musicales” fueron muy populares a mediados del siglo XVIII en Europa Occidental. El llamado “Juego filarmónico” es un ejemplo de este sistema para crear música de manera aleatoria, datado en 1780 y atribuido según fuentes de la época al compositor Franz Joseph Haydn (1732-1809); aunque todo parece indicar que su verdadero autor fue otro compositor austriaco llamado Maximilian Stadler (1748-1833). El Juego fue concebido como un entretenimiento destinado a las reuniones sociales, pero también como un estudio teórico de composición musical.</p>
+							<p>Mediante un sencillo juego de datos, cualquier persona sin conocimientos musicales podía componer infinidad de pequeñas piezas en forma de “minué”, el baile de salón más popular de la época.</p>
+	                  	</div>
+	                  	<div class="col-md-4">
+	                      	<img src="/assets/images/dancing-bright.jpg" alt="Imagen de baile de salón del siglo XVIII" title="Escena de baile de salón del siglo XVIII" width="300" height="220" class="img-responsive">
+	                  	</div>
+	                </div>
+	            </div>
+	        </div>
+
+	        <div class="row">
+	            <div class="container">
+	                <div class="col-md-12 subtitulo-historia" id="titulo-funciona-juego">
+	                    <h2>Cómo funciona  <a class="flecha-mobile" id="flecha-juego"><span class="glyphicon glyphicon-triangle-bottom"></span></a></h2>
+	                </div>
+
+	                <div class="funciona-juego contenido-historia">
+						<div class="col-md-4">
+							<img src="/assets/images/table.jpg" alt="Imagen del manuscrito del Juego filarmónico de la Biblioteca Nacional de España" title="Páginas del manuscrito del Juego filarmónico de la Biblioteca Nacional de España" width="300" height="220" class="img-responsive how-it-works">
+						</div>
+
+						<div class="col-md-8">
+							<p>El juego consta de una partitura de  272 compases numerados (escrita para instrumentos de tecla y cuerda), junto a cuatro tablas en las que cada uno de estos números de compás aparecen reflejados. Las 32 columnas verticales representan los compases de los que consta un minué y las filas horizontales representan los valores correspondientes a tiradas de dos dados (del 2 al 12), en la primera parte de la obra, y de un solo dado (del 1 al 6) en la segunda sección, también denominada “Trío”. </p>
+							<p>Al cruzar el valor horizontal de cada tirada y el orden de los compases reflejado en las columnas verticales (nombradas con las letras del abecedario de la A hasta la H), el jugador obtenía una casilla con un número escrito del 1 al 176 (en las dos tablas de la primera sección) y del 1 al 96 (en las dos tablas de la segunda sección), que remitían a cada uno los  compases de la partitura que acompaña el Juego. A continuación, el jugador copiaba el fragmento musical obtenido y así, en sucesivas jugadas, iba construyendo los 32 compases  de una nueva partitura, que finalmente era interpretada por los mismos jugadores o por músicos a su servicio. Hay billones de combinaciones posibles, así que cada minué compuesto con ayuda del “Juego filarmónico” es una pieza musical única, siempre nueva y “recién nacida”, aunque esté compuesta hace más de doscientos años. </p>
+							<p><a href="/">Crear un nuevo minueto<span class="glyphicon glyphicon-triangle-right"></span></a></p>
+							<p><a href="http://www.bne.es/webdocs/Catalogos/JuegoFilarmonico.pdf">Más información sobre el Juego filarmónico<span class="glyphicon glyphicon-triangle-right"></span></a></p>
+						</div>
+	                </div>
+	            </div>
+	        </div>
+
+	        <div class="row">
+	            <div class="container">
+	                <div class="col-md-12 subtitulo-historia" id="titulo-documento-juego">
+	                    <h2>El manuscrito del <i>Juego filarmónico</i> en la BNE  <a class="flecha-mobile" id="flecha-juego"><span class="glyphicon glyphicon-triangle-bottom"></span></a></h2>
+	                </div>
+
+	               	<div class="documento-juego contenido-historia">
+		                <div class="col-md-8">
+		                    <p>La Biblioteca Nacional de España adquirió a Lubrano Music Antiquarians (Nueva York) en mayo 2000, un manuscrito con título en español “Juego filarmónico: para componer minués con sus tríos para fortepiano por la suerte de los dados,  obra del Señor Dn. José Haidem [Joseph Haydn]”, según reza en la portada de forma españolizada (signatura BNE, M/14856).</p>
+		                    <p><a href="http://blog.bne.es/blog/el-manuscrito-de-el-juego-filarmonico/">Más información sobre el manuscrito</a></p>
+		                </div>
+		                <div class="col-md-4">
+		                    <img src="/assets/images/fotos-manuscrito.png" alt="Imagen del manuscrito del Juego filarmónico de la Biblioteca Nacional de España" title="Páginas del manuscrito del Juego filarmónico de la Biblioteca Nacional de España" width="250" class="img-responsive">
+		                </div>
+	                </div>
+	            </div>
+	        </div>
+
+	        <div class="row">
+	            <div class="container">
+	                <div class="col-md-12 subtitulo-historia" id="titulo-creador-juego">
+	                    <h2>Creador automático de minuetos <a  class="flecha-mobile" id="flecha-juego"><span class="glyphicon glyphicon-triangle-bottom"></span></a></h2>
+	                </div>
+
+		            <div class="creador-juego contenido-historia">
+						<div class="col-md-4">
+							<img src="/assets/images/ejemplo-player.png" alt="Ejemplo de un minueto único" title="Minueto creado por el Juego filarmónico de la Biblioteca Nacional de España" width="300" height="220" class="img-responsive">
+						</div>
+						<div class="col-md-8">
+							<p>Participar en el Juego filarmónico es muy sencillo:</p>
+							<p><strong>1)</strong> Clica en "Tirar los dados" para generar las 32 tiradas que asignarán aleatoriamente un compás a cada una de las 32 columnas. Con cada tirada de dados se crea una nueva combinación melódica.</p>
+							<p><strong>2)</strong> Una vez generados los compases, ya puedes escuchar del minueto que se ha generado para ti.</p>
+							<p><strong>3)</strong> Ponle un nombre a tu minueto y compártelo por mail o en tus redes sociales. Recuerda que hay más de 120 000 cuatrillones de posibles melodías, te garantizamos que tu minueto es único e irrepetible.</p>
+							<p><a href="/">Crear un nuevo minueto<span class="glyphicon glyphicon-triangle-right"></span></a></p>
+						</div>
+		            </div>
+	            </div>
+	        </div>
+
+	        <div class="row downloads">
+	            <div class="container">
+	                <div class="col-md-12">
+	                    <h3>Descargas</h3>
+	                </div>
+
+	                <div class="col-md-12 download-buttons">
+	                    <ul class="list-inline">
+	                        <li class="btn"><a href="http://bdh-rd.bne.es/viewer.vm?id=0000058728"><img src="/assets/images/icon-download-pdf.svg" class="pull-left icon-pdf"><span class="pull-right text-left"> Documento original del <br>Juego filarmónico del s.XVIII</span></a></li>
+	                        <li class="btn"><a href="/compases.zip"><img src="/assets/images/icon-download-midi.svg" class="pull-left icon-midi"><span class="pull-right text-left">Descargar los compases <br>individuales en MIDI</span></a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- end History Tab Content -->
+
+		<!-- Page Footer -->
+	    <footer class="footer historyPage">
+	        <div class="container page-footer">
+	            <div class="row">
+	                <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-1 page-footer-counter">
+	                    <p>Minuetos creados</p>
+                      <p id="minueCounter">{{@count}}</p>
+	                </div>
+
+	                <div class="footer-logos">
+	                  <div class="col-md-1 col-xs-6 col-sm-1 page-footer-logoBNE">
+	                      <a href="http://www.bne.es/es/Inicio/index.html"><img src="/assets/images/logoBNEpositivo.png" alt="Logo de la Biblioteca Nacional de España" title="Logo de la Biblioteca Nacional de España" width="45"></a>
+	                  </div>
+	                  <div class="col-md-2 col-xs-6 col-sm-2 page-footer-redes">
+	                      <a href="http://www.red.es/redes/"><img src="/assets/images/logo_redes.png" alt="Logo de Red.es" title="Logo de Red.es" width="90"></a>
+	                  </div>
+	                </div>
+
+	                <div class="col-md-4 col-sm-5 page-footer-copyright">
+	                    <ul>
+	                        <li><a href="http://www.bne.es/es/NavegacionRecursiva/Pie/Cookies/">Política de cookies</a></li>
+	                        <li>© 2016 BNE</li>
+	                        <li>Pº Recoletos, 20-22, 28020 Madrid</li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </footer>
+	    <!-- end Page Footer -->
+
+	</body>
+
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.scrollTo.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+</html>

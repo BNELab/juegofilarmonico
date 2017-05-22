@@ -1,0 +1,1717 @@
+@media (max-width: 768px) {
+  #historiaTitle {
+    font-size: 25px !important;
+  }
+  #control .game-selected .btnstop:hover {
+    background: none !important;
+  }
+  #control .game-selected .btnstop {
+    background: none !important;
+  }
+  #control button:hover {
+    background: none !important;
+  }
+  .btnplaymobile {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    z-index: 2;
+    height: 170px;
+    width: 100%;
+    text-align: center;
+  }
+  .btnplaymobile button {
+    bottom: inherit;
+  }
+  .btnplaymobile #btnPlay {
+    background: none !important;
+    height: inherit !important;
+    width: inherit !important;
+    left: inherit !important;
+    border: 0px;
+    height: inherit;
+    position: relative;
+    bottom: inherit !important;
+    max-height: 35% !important;
+  }
+  .btnplaymobile #btnPlay img {
+    max-height: 132px;
+    position: relative;
+    top: 20px;
+  }
+  .btnplaystandar {
+    display: none;
+  }
+  .navbar-brand {
+    padding: 15px 0px;
+  }
+  .navbar-brand img {
+    margin-left: 0 !important;
+    margin-right: 1em !important;
+    width: 45px !important;
+  }
+  .navbar .navbar-header {
+    width: 100%;
+    margin-right: 0em;
+    margin-left: 0em;
+  }
+  .navbar .navbar-header #historiaTitle {
+    margin-top: 1.36em;
+  }
+  .navbar .navbar-header img {
+    width: 53px;
+    margin-left: 0px;
+  }
+  .navbar .navbar-header h1 {
+    font-size: 25px;
+    margin-top: 1.2em;
+  }
+  .navbar .container-menu #menuJuego {
+    margin-left: 1em;
+  }
+  .navbar .container-menu .navbar-nav.navbar-right {
+    margin-right: inherit;
+    width: 100% !important;
+    margin-top: 3em !important;
+  }
+  .navbar .container-menu .navbar-nav.navbar-right li {
+    width: auto;
+    float: left;
+  }
+  #historiaTab .row {
+    padding-top: 0em !important;
+    padding-bottom: 0em !important;
+  }
+  #historiaTab .contenido-historia {
+    display: none;
+    padding-bottom: 1em;
+  }
+  #historiaTab .contenido-historia img {
+    margin: 1em 1em 1em 2em;
+  }
+  #historiaTab .documento-juego .col-md-4 {
+    margin-left: 1em;
+  }
+  #historiaTab .documento-juego .col-md-4 img {
+    margin-bottom: -1em !important;
+  }
+  #historiaTab .titulo-historia {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  #historiaTab .container {
+    padding: 1em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
+  #historiaTab h2 {
+    position: relative;
+    font-size: 1.3em;
+  }
+  #historiaTab h2 .flecha-mobile {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: -12px;
+  }
+  .tabbed ul li {
+    margin-right: 32px;
+  }
+  .jumbotron.header {
+    background: url(../images/fondo-partitura-min-mobile.jpg) no-repeat center;
+    background-size: cover;
+    height: 465px;
+  }
+  .jumbotron.header .header-image {
+    display: none;
+  }
+  .jumbotron.header .header-text .header-intro a {
+    font-size: 18px;
+  }
+  .jumbotron.introduction {
+    height: auto;
+  }
+  .jumbotron.introduction .presentation-steps {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .jumbotron .header-text {
+    padding: 1em !important;
+  }
+  .container {
+    width: auto !important;
+  }
+  .container .game-step ul {
+    padding: 0;
+  }
+  .container .game-step .presentation-steps-number {
+    float: left;
+  }
+  .container .game-step .game-step-text {
+    font-size: 20px;
+    margin-left: 0.5em;
+    display: block;
+    display: inline-block;
+    width: 80%;
+  }
+  .container .game-step .game-step-text h3 {
+    font-size: 1em;
+  }
+  .container .game-step .game-step-text h3 span {
+    padding-left: 0em;
+  }
+  .container .game-step .game-counter {
+    margin-left: 1em;
+  }
+  .container .game-step .game-creation {
+    margin-left: 4em;
+  }
+  .container .game-step .game-creation img {
+    width: 70px;
+  }
+  .container .game-step .game-creation #btnCreate {
+    font-size: 1em;
+  }
+  .tablero1 {
+    width: 100%;
+    background-color: rgba(224, 216, 190, 0.5);
+  }
+  .tablero1 .titulo {
+    width: 20%;
+    margin-left: 2%;
+  }
+  .tablero1 .interior {
+    width: 100%;
+  }
+  .tablero1 .interior .mdados {
+    width: 10%;
+  }
+  .tablero1 .interior .tminu {
+    width: 8.5%;
+  }
+  .tablero1 .interior .tminu.mdados {
+    background: transparent !important;
+    height: 50px;
+    text-align: center;
+  }
+  #tablaMinuetos {
+    margin-bottom: 0 !important;
+    padding-bottom: 1em;
+  }
+  #tablaMinuetos .fila {
+    width: 97%;
+    margin: 0 auto;
+  }
+  #tablaTrios .interior .fila {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #tablaTrios .interior .tminu {
+    width: 12%;
+    margin-left: 4%;
+  }
+  #control .game-selected {
+    display: inline-block;
+    width: 100%;
+  }
+  #control .game-selected .titulo {
+    padding-left: 7px;
+    left: inherit;
+    width: auto;
+    min-height: 70px;
+    width: 15%;
+    padding-top: 0.7em;
+  }
+  #control .game-selected .control_minueto .docu {
+    width: 10%;
+  }
+  #control .game-selected .control_trio .trio {
+    width: 10%;
+  }
+  #control #selected-first-part {
+    padding-top: 20px;
+  }
+  #control #selected-second-part {
+    padding-bottom: 0 !important;
+  }
+  .player {
+    height: 170px;
+  }
+  .player .tablaturas {
+    z-index: 1;
+    width: 40000px;
+  }
+  .capacreacion .game-step {
+    margin-top: -0.8em !important;
+  }
+  .capacreacion .game-sharing {
+    padding: 2em 1em 1em 1em;
+  }
+  .capacreacion .game-sharing .row:nth-child(2) .social-links .btn-labeled {
+    margin-bottom: 1em;
+  }
+  .footer-aside {
+    margin-top: 0em;
+    padding: 1em;
+    padding-bottom: 0em;
+  }
+  .footer-aside .footer_creacion .parrafo {
+    font-size: 0.9em;
+  }
+  .footer-aside .col-md-4 img {
+    margin: 0 auto;
+  }
+  .dado2 {
+    background: url(../images/dadosmobile.png) 100% no-repeat;
+    background-position: 0px 0px;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -7px;
+    transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .dado3 {
+    background: url(../images/dadosmobile.png) 100% no-repeat;
+    background-position: -30px 0px;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -7px;
+    transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .dado4 {
+    background: url(../images/dadosmobile.png) 100% no-repeat;
+    background-position: -60px 0px;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -7px;
+    transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .dado5 {
+    background: url(../images/dadosmobile.png) 100% no-repeat;
+    background-position: -90px 0px;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -7px;
+    transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .dado6 {
+    background: url(../images/dadosmobile.png) 100% no-repeat;
+    background-position: -120px 0px;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -7px;
+    transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .dado7 {
+    background: url(../images/dadosmobile.png) 100% no-repeat;
+    background-position: -150px 0px;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -7px;
+    transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .dado8 {
+    background: url(../images/dadosmobile.png) 100% no-repeat;
+    background-position: -183px 0px;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -7px;
+    transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .dado9 {
+    background: url(../images/dadosmobile.png) 100% no-repeat;
+    background-position: -215px 0px;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -7px;
+    transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .dado10 {
+    background: url(../images/dadosmobile.png) 100% no-repeat;
+    background-position: -246px 0px;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -7px;
+    transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .dado11 {
+    background: url(../images/dadosmobile.png) 100% no-repeat;
+    background-position: -276px 0px;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -7px;
+    transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .dado12 {
+    background: url(../images/dadosmobile.png) 100% no-repeat;
+    background-position: -306px 0px;
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin-top: -7px;
+    transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  .jumbotron.header .header-image {
+    display: none;
+  }
+  .presentation .presentation-text {
+    padding: 1em;
+  }
+  .presentation .presentation-steps {
+    margin: 0 auto;
+  }
+  .jumbotron.header-aux .header-image {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .navbar .navbar-header h1 {
+    font-size: 21px;
+    padding-top: 3px;
+  }
+  .navbar .navbar-header img {
+    width: 40px !important;
+  }
+  #historiaTitle {
+    font-size: 21px !important;
+    margin-top: 1.45em !important;
+  }
+  .tabbed ul {
+    margin-top: 2.5em !important;
+  }
+  .tabbed ul li:after {
+    left: -13px;
+  }
+  .tabbed ul li:before {
+    right: -13px;
+  }
+  .tabbed ul li:before,
+  .tabbed ul li:after {
+    width: 27px;
+  }
+  .container-menu .navbar-brand img {
+    margin-right: 1em !important;
+    margin-left: 0 !important;
+  }
+  .container-menu .navbar-right.tabs #menuJuego {
+    margin-right: 0.5em !important;
+  }
+  .container-menu .navbar-right.tabs #menuHistoria {
+    margin-left: 15px;
+    margin-right: 0 !important;
+  }
+  .jumbotron.header {
+    height: 570px !important;
+  }
+  .jumbotron.introduction .presentation-steps {
+    width: 280px !important;
+  }
+  .game-content .game-creation {
+    margin-left: 1.5em !important;
+  }
+  .game-content .game-counter {
+    margin-left: 0 !important;
+  }
+  .game-content .game-counter #btnCounter {
+    font-size: 0.8em !important;
+  }
+  .gameselected .titulo {
+    font-size: 0.8em;
+    padding-top: 1em !important;
+  }
+  .player {
+    height: 170px !important;
+  }
+  .player .tablaturas {
+    width: 6000px !important;
+  }
+  .player .btnplaymobile {
+    height: 150px !important;
+    top: -12px !important;
+  }
+  .player .btnplaymobile #btnPlay img {
+    max-height: 100px !important;
+  }
+  .tablero1 .titulo {
+    font-size: 0.8em;
+    padding-left: 11px;
+  }
+  .tablero1 .interior .tminu {
+    width: 8vw;
+    font-size: 0.8em;
+  }
+  .capacreacion {
+    padding-top: 2em !important;
+  }
+  .capacreacion .game-step {
+    margin-top: 0em !important;
+  }
+  .capacreacion #furl {
+    width: 90% !important;
+  }
+  .jumbotron.header-aux {
+    height: 570px !important;
+  }
+  .footer-aside .row .col-md-4 img {
+    margin: 0 auto !important;
+  }
+  #historiaTab h2 {
+    font-size: 1em;
+  }
+  #historiaTab .subtitulo-historia {
+    font-weight: bold;
+  }
+  #historiaTab .contenido-historia img {
+    margin: 0 auto !important;
+  }
+  #historiaTab .documento-juego img {
+    margin-bottom: -1em !important;
+  }
+  #historiaTab .downloads .download-buttons ul {
+    margin-bottom: 9% !important;
+  }
+  #historiaTab .downloads .download-buttons ul li {
+    width: 260px !important;
+    padding-right: 0.8em !important;
+    padding-left: 0.1em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li:nth-child(2) {
+    padding-right: 2.6em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-pdf {
+    width: 21px !important;
+    margin-left: 0.5em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-midi {
+    width: 23px !important;
+    margin-left: 0.3em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a span {
+    font-size: 0.9em !important;
+  }
+  .footer .page-footer .page-footer-counter {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer .page-footer .page-footer-counter p:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer .page-footer .footer-logos {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .footer .page-footer .footer-logos .page-footer-logoBNE {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .footer .page-footer .footer-logos .page-footer-redes {
+    width: inherit;
+    width: 50%;
+  }
+  .footer .page-footer .page-footer-copyright {
+    display: inline-block;
+    clear: both;
+    padding-left: 2em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+  .navbar-nav.navbar-right {
+    margin-right: inherit;
+    width: 100% !important;
+    margin-top: 3em !important;
+  }
+  .navbar-nav.navbar-right #menuJuego {
+    margin-right: 3em !important;
+  }
+  .jumbotron.header {
+    height: 490px;
+  }
+  .game-content .game-creation {
+    margin-left: 1.5em !important;
+  }
+  .game-content .game-counter {
+    margin-left: 0 !important;
+  }
+  .game-content .game-counter #btnCounter {
+    font-size: 0.8em !important;
+  }
+  .tablero1 .titulo {
+    width: 22% !important;
+  }
+  #player .tablaturas .imagen {
+    width: 175px !important;
+  }
+  #player .tablaturas .imagen:nth-child(1) {
+    width: 350px !important;
+  }
+  #player .btnplaymobile {
+    height: 120px !important;
+    top: -12px !important;
+  }
+  #player .btnplaymobile img {
+    max-height: 120px !important;
+  }
+  .jumbotron.header-aux {
+    height: 490px !important;
+  }
+  #historiaTab .contenido-historia img {
+    margin: 0 auto;
+  }
+  #historiaTab .downloads .download-buttons ul {
+    margin-bottom: 9% !important;
+  }
+  #historiaTab .downloads .download-buttons ul li {
+    width: 310px;
+    padding-right: 1.5em;
+  }
+  #historiaTab .downloads .download-buttons ul li:nth-child(2) {
+    padding-right: 3.5em;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-pdf {
+    margin-left: 1.1em;
+    width: 25px !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-midi {
+    margin-left: 0.7em;
+    width: 27px !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a span {
+    font-size: 1.18em;
+  }
+  .footer .page-footer .page-footer-counter {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer .page-footer .page-footer-counter p:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer .page-footer .footer-logos {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .footer .page-footer .footer-logos .page-footer-logoBNE {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .footer .page-footer .footer-logos .page-footer-redes {
+    width: inherit;
+    width: 50%;
+  }
+  .footer .page-footer .page-footer-copyright {
+    display: inline-block;
+    clear: both;
+    padding-left: 2em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+  .navbar.navbar-static-top .container-menu .navbar-brand #historiaTitle {
+    margin-top: 1.32em !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-brand img {
+    margin-left: 0em !important;
+    margin-right: 1em !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-right {
+    margin-top: 3em !important;
+    width: 100% !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-right #menuJuego {
+    margin-right: 3em !important;
+  }
+  .jumbotron.header {
+    height: 490px;
+  }
+  .game-content .game-creation {
+    margin-left: 3em;
+  }
+  .game-content .game-counter {
+    margin-left: 0 !important;
+  }
+  .game-content .game-counter #btnCounter {
+    font-size: 0.9em;
+  }
+  .tablero1 .titulo {
+    width: 22% !important;
+  }
+  #player .tablaturas .imagen {
+    width: 185px !important;
+  }
+  #player .tablaturas .imagen:nth-child(1) {
+    width: 370px !important;
+  }
+  #player .btnplaymobile {
+    height: 100px !important;
+    top: -12px !important;
+  }
+  #player .btnplaymobile img {
+    max-height: 100px !important;
+  }
+  .capacreacion {
+    padding-top: 2em !important;
+  }
+  .capacreacion .game-step {
+    margin-top: 0em !important;
+  }
+  .jumbotron.header-aux {
+    height: 490px !important;
+  }
+  #historiaTab h2 {
+    font-size: 1.2em !important;
+  }
+  #historiaTab .contenido-historia img {
+    margin: 1em 1em 1em 0.5em;
+  }
+  #historiaTab .downloads .download-buttons ul {
+    margin-bottom: 5% !important;
+  }
+  #historiaTab .downloads .download-buttons ul li {
+    width: 310px;
+    padding-right: 1.3em;
+  }
+  #historiaTab .downloads .download-buttons ul li:nth-child(2) {
+    padding-right: 3.5em;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-pdf {
+    margin-left: 1.1em;
+    width: 25px !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-midi {
+    margin-left: 0.7em;
+    width: 27px !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a span {
+    font-size: 1.1em;
+  }
+  .footer .page-footer .page-footer-counter {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer .page-footer .page-footer-counter p:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer .page-footer .footer-logos {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .footer .page-footer .footer-logos .page-footer-logoBNE {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .footer .page-footer .footer-logos .page-footer-redes {
+    width: inherit;
+    width: 50%;
+  }
+  .footer .page-footer .page-footer-copyright {
+    display: inline-block;
+    clear: both;
+    padding-left: 2em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 412px) {
+  .navbar .navbar-nav {
+    margin-bottom: -0.3px !important;
+  }
+  #player .tablaturas .imagen {
+    width: 175px !important;
+  }
+  #player .tablaturas .imagen:nth-child(1) {
+    width: 350px !important;
+  }
+  #player .btnplaymobile {
+    height: 120px !important;
+    top: -16px !important;
+  }
+  #player .btnplaymobile img {
+    max-height: 120px !important;
+  }
+  .capacreacion .game-step {
+    margin-top: -0.8em !important;
+  }
+  .jumbotron.header-aux {
+    height: 465px !important;
+  }
+  #historiaTab .downloads .download-buttons ul {
+    margin-bottom: 5%;
+  }
+  #historiaTab .downloads .download-buttons ul li {
+    width: 345px;
+    padding-right: 1.5em;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-pdf {
+    width: 30px !important;
+    margin-left: 1em;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-midi {
+    width: 33px !important;
+    margin-left: 0.6em;
+  }
+  #historiaTab .downloads .download-buttons ul li a span {
+    font-size: 18px;
+  }
+  #historiaTab .downloads .download-buttons ul li:nth-child(2) {
+    padding-right: 3em;
+  }
+  .footer .page-footer .page-footer-counter {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer .page-footer .page-footer-counter p:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer .page-footer .footer-logos {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .footer .page-footer .footer-logos .page-footer-logoBNE {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .footer .page-footer .footer-logos .page-footer-redes {
+    width: inherit;
+    width: 50%;
+  }
+  .footer .page-footer .page-footer-copyright {
+    display: inline-block;
+    clear: both;
+    padding-left: 2em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 413px) and (max-width: 414px) {
+  #player .tablaturas .imagen {
+    width: 175px !important;
+  }
+  #player .tablaturas .imagen:nth-child(1) {
+    width: 350px !important;
+  }
+  #player .btnplaymobile {
+    height: 100px !important;
+    top: -10px !important;
+  }
+  #player .btnplaymobile img {
+    max-height: 100px !important;
+  }
+  .capacreacion {
+    padding-top: 2em !important;
+  }
+  .capacreacion .game-step {
+    margin-top: 0em !important;
+  }
+  .jumbotron.header-aux {
+    height: 465px !important;
+  }
+  #historiaTab .downloads .download-buttons ul {
+    margin-bottom: 5%;
+  }
+  #historiaTab .downloads .download-buttons ul li {
+    width: 345px;
+    padding-right: 1.5em;
+  }
+  #historiaTab .downloads .download-buttons ul li:nth-child(2) {
+    padding-right: 3.8em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-pdf {
+    width: 30px !important;
+    margin-left: 0.5em;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-midi {
+    width: 33px !important;
+    margin-left: 0.2em;
+  }
+  #historiaTab .downloads .download-buttons ul li a span {
+    font-size: 18px;
+  }
+  #historiaTab .downloads .download-buttons ul li:nth-child(2) {
+    padding-right: 3em;
+  }
+  .footer .page-footer .page-footer-counter {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer .page-footer .page-footer-counter p:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer .page-footer .footer-logos {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .footer .page-footer .footer-logos .page-footer-logoBNE {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .footer .page-footer .footer-logos .page-footer-redes {
+    width: inherit;
+    width: 50%;
+  }
+  .footer .page-footer .page-footer-copyright {
+    display: inline-block;
+    clear: both;
+    padding-left: 2em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 415px) and (max-width: 568px) {
+  .jumbotron.header {
+    height: 370px;
+  }
+  .jumbotron.introduction:after {
+    right: 70% !important;
+  }
+  .navbar-header #historiaTitle {
+    margin-top: 1.34em !important;
+  }
+  .capacreacion {
+    padding-top: 2em !important;
+  }
+  .capacreacion .game-step {
+    margin-top: 0em !important;
+  }
+  .tablero1 .titulo {
+    width: 16%;
+  }
+  #control .game-selected .titulo {
+    padding-left: 3% !important;
+  }
+  #player {
+    height: 170px !important;
+  }
+  #player .tablaturas .imagen {
+    width: 175px !important;
+  }
+  #player .tablaturas .imagen:nth-child(1) {
+    width: 350px !important;
+  }
+  #player .btnplaymobile {
+    height: 100px !important;
+    top: -12px !important;
+  }
+  #player .btnplaymobile img {
+    max-height: 110px !important;
+  }
+  .jumbotron.header-aux {
+    height: 370px !important;
+  }
+  #historiaTab .contenido-historia img {
+    margin: 0 auto !important;
+  }
+  #historiaTab .downloads .download-buttons ul {
+    margin-bottom: 5% !important;
+  }
+  #historiaTab .downloads .download-buttons ul li {
+    width: 345px !important;
+    padding-right: 1.5em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li:nth-child(2) {
+    padding-right: 3.7em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-pdf {
+    width: 30px !important;
+    margin-left: 0.7em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-midi {
+    width: 33px !important;
+    margin-left: 0.5em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a span {
+    font-size: 1.2em !important;
+  }
+  .footer .page-footer .page-footer-counter {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer .page-footer .page-footer-counter p:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer .page-footer .footer-logos {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .footer .page-footer .footer-logos .page-footer-logoBNE {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .footer .page-footer .footer-logos .page-footer-redes {
+    width: inherit;
+    width: 50%;
+  }
+  .footer .page-footer .page-footer-copyright {
+    display: inline-block;
+    clear: both;
+    padding-left: 2em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 569px) and (max-width: 640px) {
+  .navbar.navbar-static-top .container-menu .navbar-header h1 {
+    font-size: 24px !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-header img {
+    width: 40px !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-header #historiaTitle {
+    font-size: 24px !important;
+    margin-top: 1.34em !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-right {
+    margin-top: 0em !important;
+    width: 56% !important;
+    float: right;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-right #menuJuego {
+    margin-right: 4em !important;
+  }
+  .jumbotron.header {
+    height: 350px !important;
+  }
+  .jumbotron.introduction:after {
+    right: 70% !important;
+  }
+  .tablero1 .titulo {
+    width: 13% !important;
+  }
+  .tablero1 .interior .tminu {
+    width: 53px !important;
+  }
+  #tablaTrios .interior .tminu {
+    width: 85px !important;
+    margin-left: 8px !important;
+  }
+  #control .game-selected .titulo {
+    padding-left: 3% !important;
+  }
+  #player .tablaturas .imagen {
+    width: 175px !important;
+  }
+  #player .tablaturas .imagen:nth-child(1) {
+    width: 350px !important;
+  }
+  #player .btnplaymobile {
+    height: 120px !important;
+    top: -12px !important;
+  }
+  #player .btnplaymobile img {
+    max-height: 120px !important;
+  }
+  .jumbotron.header-aux {
+    height: 350px !important;
+  }
+  #historiaTab .contenido-historia img {
+    margin: 0 auto;
+  }
+  #historiaTab .downloads .download-buttons ul {
+    margin-bottom: 5%;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn {
+    width: 330px !important;
+    padding-right: 2.1em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn:nth-child(2) {
+    padding-right: 4em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a .icon-pdf {
+    width: 30px !important;
+    margin-left: 0.8em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a .icon-midi {
+    width: 33px !important;
+    margin-left: 0.4em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a span {
+    font-size: 1.2em !important;
+  }
+  .footer .page-footer .page-footer-counter {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer .page-footer .page-footer-counter p:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer .page-footer .footer-logos {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .footer .page-footer .footer-logos .page-footer-logoBNE {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .footer .page-footer .footer-logos .page-footer-redes {
+    width: inherit;
+    width: 50%;
+  }
+  .footer .page-footer .page-footer-copyright {
+    display: inline-block;
+    clear: both;
+    padding-left: 2em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 667px) {
+  .navbar.navbar-static-top .container-menu .navbar-header .navbar-brand h1 {
+    font-size: 24px;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-header .navbar-brand #historiaTitle {
+    font-size: 24px !important;
+    margin-top: 1.34em !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-right {
+    margin-top: 0em !important;
+    width: 55% !important;
+    float: right;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-right #menuJuego {
+    margin-right: 3.5em !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-nav {
+    margin: 0 -15px !important;
+  }
+  .jumbotron.header {
+    height: 350px !important;
+  }
+  .jumbotron.introduction:after {
+    right: 70% !important;
+  }
+  .tablero1 .titulo {
+    width: 13% !important;
+  }
+  .tablero1 .interior .tminu {
+    width: 55px !important;
+  }
+  #tablaTrios .interior .tminu {
+    width: 85px !important;
+    margin-left: 8px !important;
+  }
+  #control .game-selected .titulo {
+    padding-left: 3% !important;
+  }
+  .capacreacion {
+    padding-top: 2em !important;
+  }
+  .capacreacion .game-step {
+    margin-top: 0em !important;
+  }
+  #player {
+    height: 175px;
+  }
+  #player .tablaturas {
+    width: 6800px !important;
+  }
+  #player .tablaturas .imagen {
+    width: 175px !important;
+  }
+  #player .tablaturas .imagen:nth-child(1) {
+    width: 350px !important;
+  }
+  #player .btnplaymobile {
+    height: 120px !important;
+    top: -15px !important;
+  }
+  #player .btnplaymobile img {
+    max-height: 120px !important;
+  }
+  .jumbotron.header-aux {
+    height: 350px !important;
+  }
+  #historiaTab .contenido-historia img {
+    margin: 0 auto;
+  }
+  #historiaTab .downloads .download-buttons ul {
+    margin-bottom: 5%;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn {
+    width: 340px !important;
+    padding-right: 1em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn:nth-child(2) {
+    padding-right: 3.2em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a .icon-pdf {
+    width: 30px !important;
+    margin-left: 0.8em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a .icon-midi {
+    width: 33px !important;
+    margin-left: 0.4em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a span {
+    font-size: 1.2em !important;
+  }
+  .footer .page-footer .page-footer-counter {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer .page-footer .page-footer-counter p:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer .page-footer .footer-logos {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .footer .page-footer .footer-logos .page-footer-logoBNE {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .footer .page-footer .footer-logos .page-footer-redes {
+    width: inherit;
+    width: 50%;
+  }
+  .footer .page-footer .page-footer-copyright {
+    display: inline-block;
+    clear: both;
+    padding-left: 2em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 668px) and (max-width: 732px) {
+  .navbar.navbar-static-top .container-menu .navbar-right {
+    margin-top: 0em !important;
+    width: 55% !important;
+    float: right;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-right #menuJuego {
+    margin-right: 4em !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-nav {
+    margin: 0 -15px !important;
+  }
+  .jumbotron.header {
+    height: 350px !important;
+  }
+  .jumbotron.introduction:after {
+    right: 70% !important;
+  }
+  .tablero1 .titulo {
+    width: 12% !important;
+  }
+  .tablero1 .interior .tminu {
+    width: 55px !important;
+  }
+  #tablaTrios .interior .tminu {
+    width: 85px !important;
+    margin-left: 8px !important;
+  }
+  #control .game-selected .titulo {
+    padding-left: 3% !important;
+  }
+  #player .tablaturas .imagen {
+    width: 175px !important;
+  }
+  #player .tablaturas .imagen:nth-child(1) {
+    width: 350px !important;
+  }
+  #player .btnplaymobile {
+    height: 120px !important;
+    top: -5px !important;
+  }
+  #player .btnplaymobile img {
+    max-height: 120px !important;
+  }
+  .jumbotron.header-aux {
+    height: 350px !important;
+  }
+  #historiaTab .contenido-historia img {
+    margin: 0 auto !important;
+  }
+  #historiaTab .downloads .download-buttons ul {
+    margin-bottom: 5%;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn {
+    width: 340px !important;
+    padding-right: 1em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn:nth-child(2) {
+    padding-right: 3.2em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a .icon-pdf {
+    width: 30px !important;
+    margin-left: 0.8em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a .icon-midi {
+    width: 33px !important;
+    margin-left: 0.4em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a span {
+    font-size: 1.2em !important;
+  }
+  .footer .page-footer .page-footer-counter {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer .page-footer .page-footer-counter p:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer .page-footer .footer-logos {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .footer .page-footer .footer-logos .page-footer-logoBNE {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .footer .page-footer .footer-logos .page-footer-redes {
+    width: inherit;
+    width: 50%;
+  }
+  .footer .page-footer .page-footer-copyright {
+    display: inline-block;
+    clear: both;
+    padding-left: 2em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 733px) and (max-width: 736px) {
+  .navbar.navbar-static-top .container-menu .navbar-right {
+    margin-top: 0em !important;
+    width: 55% !important;
+    float: right;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-right #menuJuego {
+    margin-right: 4em !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-nav {
+    margin: 0 -15px !important;
+  }
+  .jumbotron.header {
+    height: 320px !important;
+  }
+  .jumbotron.introduction:after {
+    right: 70% !important;
+  }
+  .tablero1 .titulo {
+    width: 12% !important;
+  }
+  .tablero1 .interior .tminu {
+    width: 60px !important;
+  }
+  #tablaTrios .interior .tminu {
+    width: 90px !important;
+    margin-left: 8px !important;
+  }
+  #player .tablaturas .imagen {
+    width: 175px !important;
+  }
+  #player .tablaturas .imagen:nth-child(1) {
+    width: 350px !important;
+  }
+  #player .btnplaymobile {
+    height: 100px !important;
+    top: -10px !important;
+  }
+  #player .btnplaymobile img {
+    max-height: 100px !important;
+  }
+  #control .game-selected .titulo {
+    padding-left: 3% !important;
+  }
+  .capacreacion {
+    padding-top: 2em !important;
+  }
+  .capacreacion .game-step {
+    margin-top: 0em !important;
+  }
+  .jumbotron.header-aux {
+    height: 320px !important;
+  }
+  #historiaTab .contenido-historia img {
+    margin: 0 auto;
+  }
+  #historiaTab .downloads .download-buttons ul {
+    margin-bottom: 5%;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn {
+    width: 340px !important;
+    padding-right: 1em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn:nth-child(2) {
+    padding-right: 3.2em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a .icon-pdf {
+    width: 30px !important;
+    margin-left: 0.8em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a .icon-midi {
+    width: 33px !important;
+    margin-left: 0.4em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li.btn a span {
+    font-size: 1.2em !important;
+  }
+  .footer .page-footer .page-footer-counter {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer .page-footer .page-footer-counter p:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer .page-footer .footer-logos {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .footer .page-footer .footer-logos .page-footer-logoBNE {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .footer .page-footer .footer-logos .page-footer-redes {
+    width: inherit;
+    width: 50%;
+  }
+  .footer .page-footer .page-footer-copyright {
+    display: inline-block;
+    clear: both;
+    padding-left: 2em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 737px) and (max-width: 768px) {
+  .navbar.navbar-static-top .container-menu .navbar-brand img {
+    margin-left: 1em !important;
+    margin-right: 2em !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-brand #historiaTitle {
+    margin-top: 1.31em !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-right {
+    margin-top: 0 !important;
+    width: 50% !important;
+  }
+  .navbar.navbar-static-top .container-menu .navbar-right #menuJuego {
+    margin-right: 4em !important;
+  }
+  .jumbotron.header {
+    height: 320px;
+  }
+  .jumbotron.introduction:after {
+    right: 70% !important;
+  }
+  #control .game-selected .titulo {
+    padding-left: 2em !important;
+  }
+  .tablero1 .titulo {
+    width: 11%;
+  }
+  .tablero1 .interior .tminu {
+    width: 39px !important;
+  }
+  #tablaTrios .interior .tminu {
+    width: 36px !important;
+    margin-left: 1px !important;
+  }
+  #player {
+    height: 175px;
+  }
+  #player .tablaturas .imagen {
+    width: 175px !important;
+  }
+  #player .tablaturas .imagen:nth-child(1) {
+    width: 350px !important;
+  }
+  #player .btnplaymobile {
+    height: 120px !important;
+    top: -10px !important;
+  }
+  #player .btnplaymobile img {
+    max-height: 120px !important;
+  }
+  .capacreacion {
+    padding-top: 2em !important;
+  }
+  .capacreacion .game-step {
+    margin-top: 0em !important;
+  }
+  .capacreacion .game-step .game-step-text {
+    font-size: 19px !important;
+  }
+  .jumbotron.header-aux {
+    height: 320px !important;
+  }
+  .footer-aside .col-md-5 {
+    float: left;
+    width: 55%;
+  }
+  #historiaTab {
+    margin: 0 auto 250px;
+  }
+  #historiaTab .row:nth-child(2),
+  #historiaTab .row:nth-child(4) {
+    background-color: #e0d8be !important;
+  }
+  #historiaTab .contenido-historia img {
+    margin: 0 auto;
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+  }
+  #historiaTab .downloads .download-buttons ul {
+    margin-bottom: 5%;
+  }
+  #historiaTab .downloads .download-buttons ul li {
+    width: 310px !important;
+    padding-right: 2em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li:nth-child(2) {
+    padding-right: 3.5em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-pdf {
+    width: 23px !important;
+    margin-left: 0.5em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a .icon-midi {
+    width: 25px !important;
+    margin-left: 0.3em !important;
+  }
+  #historiaTab .downloads .download-buttons ul li a span {
+    font-size: 1.1em !important;
+  }
+  .footer .page-footer-counter {
+    width: 24% !important;
+    margin-right: 1em;
+    margin-left: 6%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+  .navbar .navbar-header h1 {
+    margin-top: 0.9em !important;
+  }
+  .navbar .navbar-header #historiaTitle {
+    margin-top: 1.1em !important;
+  }
+  .navbar .tabs {
+    margin-right: 0em;
+    margin-bottom: -0.6px !important;
+  }
+  .main-content .container {
+    width: 800px;
+  }
+  .main-content .jumbotron.header {
+    height: 330px;
+  }
+  .main-content .jumbotron.introduction .container {
+    width: 750px !important;
+  }
+  .main-content .jumbotron.introduction .presentation-steps {
+    margin: 0 auto;
+  }
+  .main-content .jumbotron.introduction:after {
+    right: 70%;
+  }
+  .main-content .game-step h3 {
+    font-size: 21px;
+  }
+  .main-content .tablero1 {
+    width: 800px;
+  }
+  .main-content .tablero1 .titulo {
+    padding-left: 10px;
+  }
+  .main-content .tablero1 .interior .mdados {
+    width: 55px;
+  }
+  .main-content .tablero1 .interior .tminu {
+    width: 39px;
+  }
+  .main-content #control .game-selected #selected-first-part .titulo {
+    padding-left: 15px;
+  }
+  .main-content #control .game-selected #selected-first-part .docu {
+    width: 39px;
+  }
+  .main-content #control .game-selected #selected-second-part .titulo {
+    padding-left: 15px;
+  }
+  .main-content #control .game-selected #selected-second-part .trio {
+    width: 39px;
+  }
+  .main-content #player .tablaturas .imagen {
+    width: 192px !important;
+  }
+  .main-content #player .tablaturas .imagen:nth-child(1) {
+    width: 384px !important;
+  }
+  .main-content .capacreacion .game-sharing {
+    padding: 2em 5em 2em 2em;
+  }
+  .main-content .jumbotron.header-aux {
+    height: 340px;
+  }
+  .footer .container {
+    width: 800px;
+  }
+  .footer .container .page-footer-counter {
+    margin-left: 11%;
+    width: 20%;
+  }
+  #historiaTab .container {
+    width: 750px !important;
+  }
+  #historiaTab .contenido-historia img {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+  .navbar .navbar-header #historiaTitle {
+    margin-top: 1.04em;
+  }
+  .jumbotron.introduction:after {
+    right: 70%;
+  }
+  #control #player {
+    height: 170px;
+  }
+  #control #player .tablaturas .imagen {
+    width: 175px !important;
+  }
+  #control #player .tablaturas .imagen:nth-child(1) {
+    width: 350px !important;
+  }
+  #control #btnPlay {
+    bottom: 16.5em !important;
+  }
+  .footer-aside .col-md-5 {
+    width: 43% !important;
+  }
+  .footer .page-footer-counter p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1280px) {
+  .navbar .tabs {
+    margin-bottom: -0.6px !important;
+  }
+  .jumbotron.introduction:after {
+    right: 60% !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .jumbotron.introduction:after {
+    right: 45% !important;
+  }
+}
